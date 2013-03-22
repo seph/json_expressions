@@ -9,9 +9,7 @@ end
 module RSpec
   module Core
     class ExampleGroup
-      def wildcard_matcher
-        ::JsonExpressions::WILDCARD_MATCHER
-      end
+      include JsonExpressions::MatchHelpers
     end
   end
 end
